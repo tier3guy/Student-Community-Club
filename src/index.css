@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #3b1e14;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar{
+  background: #D7B19D;
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: #402218;
+}
+
+body{
+  width: 85%;
+  margin: auto;
+  background-color: #C68B59;
+}
+
+.navbar{
+  font-family: 'Cascadia Code';
+  padding: 1em 0em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li{
+  padding-left: 1.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero{
+  min-height: 92vh;
+  padding-top: 10em;
+  font-family: 'Cascadia Code';
+}
+
+.about{
+  min-height: 80vh;
+  font-family: 'Cascadia Code';
+}
+
+.section{
+  min-height: 10em;
+  width: 48%;
+}
+
+.about h1{
+  font-size: 3em;
+}
+
+.welcome_text{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_primary{
+  margin-top: 0.7em;
+  background-color: #402218;
+  padding: 0.8em;
+  color: aliceblue;
+  font-family: 'Cascadia Code';
+  font-size: large;
+  border: 5px solid rgba(138, 42, 42, 0.116);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.btn_primary:active{
+  border-color: #D7B19D;
 }
