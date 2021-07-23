@@ -1,9 +1,9 @@
 export default function Sections(props){
   return(
     <div className = 'section'>
-      <h4>
+      <p>
       {props.text}
-      </h4>
+      </p>
     </div>
   );
 }

@@ -54,6 +54,8 @@ body{
 .section{
   min-height: 10em;
   width: 48%;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .about h1{

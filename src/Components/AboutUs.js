@@ -4,10 +4,10 @@ export  default function About(){
   return(
     <>
       <div className = 'about'>
-        <h1>ABOUT US</h1>
+        <h1>About Us</h1>
         <div className = 'section_container' style = {{display:'flex' , justifyContent:'space-between',marginTop:'1em'}}>
-          <Sections text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
-          <Sections text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+          <Sections text = "Hi, first of all let  me introduce myself, I am Avinash Gupta, I am a student of Narula Institute of Technology, and I am doing my B.tech in Information & Technology. When I started my college in my freshman year, I faced a lot of difficulties in order to find resources to study, so that I can pass the semester exam. But there where no such resources available on the internet. But my friends and from their sources, (from their seniors and elders) I got a lot of study material. Then I thought we have resources but they are just scattered among a students. Then I decided to built this website."/>
+          <Sections text = "Now, what does this website do? So, the answer is that it just collects the resources/study material and serves you at one place. Now no-one needs do googling the topics they want to study. In future, I will try to bring teachers to this website so that they can also upload their study material here. You are also requested to upload your study material in the Contact Us section. So that the future community can access those. One even contribution counts."/>
         </div>
       </div>
     </>
