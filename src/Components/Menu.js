@@ -6,6 +6,7 @@ export default function Menu(){
         <li>Resources</li>
         <li>Contact Us</li>
         <li>About Us</li>
+        <li>Our Contributers</li>
       </ul>
     </>
   );

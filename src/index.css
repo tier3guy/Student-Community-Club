@@ -14,18 +14,24 @@
 }
 
 body{
+  background-color: #C68B59;
+}
+
+.app{
   width: 85%;
   margin: auto;
-  background-color: #C68B59;
 }
 
 .navbar{
   font-family: 'Cascadia Code';
-  padding: 1em 0em;
+  padding: 1.5em 6em;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: #C68B59;
 }
 
 .menu{
@@ -41,14 +47,18 @@ body{
 }
 
 .hero{
-  min-height: 92vh;
-  padding-top: 10em;
+  min-height: 100vh;
+  padding-top: 15em;
   font-family: 'Cascadia Code';
 }
 
-.about{
-  min-height: 80vh;
+.about , .Contact{
+  height: 80vh;
   font-family: 'Cascadia Code';
+}
+
+.Contact{
+  height: 60vh;
 }
 
 .section{
@@ -62,9 +72,51 @@ body{
   font-size: 3em;
 }
 
+.connect_container{
+  margin-top: 1.5em;
+}
+
+#input{
+  padding: 15px;
+  border: none;
+  border-bottom: 5px solid rgba(78, 16, 16, 0.863);
+  width: 25em;
+  font-family: 'Cascadia Code';
+  outline: none;
+  background: transparent;
+  color: #3b1e14;
+  font-size: 1em;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5a2f20d2;
+}
 .welcome_text{
   display: flex;
   flex-direction: column;
+}
+
+.Footer{
+  background-color: #3b1e14;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 6em;
+  font-family: 'Cascadia Code';
+}
+
+.fab{
+  color: white;
+  margin-left: 1em;
+  font-size: large;
+  transition: all 0.3s;
+}
+.fab:hover{
+  color: #C68B59;
+}
+.join{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 .btn_primary{
@@ -74,12 +126,16 @@ body{
   color: aliceblue;
   font-family: 'Cascadia Code';
   font-size: large;
-  border: 5px solid rgba(138, 42, 42, 0.116);
+  border: 5px solid rgba(92, 31, 31, 0.445);
   border-radius: 15px;
   cursor: pointer;
   transition: border 0.2s;
 }
 
-.btn_primary:active{
-  border-color: #D7B19D;
+.btn_primary:active {
+  border-color: #c58461c4;
+  outline: none;
+}
+#input:focus{
+  border-color: #722800;
 }
