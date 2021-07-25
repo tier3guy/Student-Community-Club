@@ -1,10 +1,45 @@
+import { useState } from "react";
+
 export default function Connect(){
+
+  const [email,setEmail] = useState('');
+  const [name,setName] = useState('');
+
+  function getMail(e){
+    setEmail(e.target.value);
+  }
+
+  function getName(e){
+    setName(e.target.value);
+  }
+
+  function updateData(){
+    if(email === '' || name === '') alert('Fill all the necessary fields');
+    else {
+      alert(email + ' ' + name)
+      setEmail('');
+      setName('');
+    };
+  }
+
   return(
     <>
       <div className = 'connect_container'>
-        <input placeholder = 'Enter Your Mail ID here' id = 'input'></input>
-        <button className = 'btn_primary' style = {{marginLeft: '1em'}}>Submit</button>
-        <h3 style = {{marginTop: '2em'}}>Well let me tell you how does this contact me section works, Once you submitted your mail, I will contact you throught that mail ID within 24 hours and after that you have to mail me the pdf of your study material that you want to publish along with your name, branch and college as well so that I can publish your profile in our contributer section.</h3>
+        <input placeholder = 'Enter Your Mail ID Here' 
+               className = 'input' 
+               type = 'email' 
+               id = 'emailSection'
+               onChange = {getMail}
+               value = {email}></input>
+        <br/>
+        <input placeholder = 'Enter Your Full Name Here' 
+               className = 'input' 
+               id = 'nameSection'
+               onChange = {getName}
+               value = {name}></input>
+        <br/>
+        <button className = 'btn_primary' style = {{marginTop: '1em'}} onClick = {updateData}>Submit</button>
+        <h3 style = {{marginTop: '2em' , lineHeight:'1.7em'}}>Well let me tell you how does this CONTACT ME section works, Once you submitted your mail, I will contact you throught that mail ID within 24 hours and after that you have to mail me the pdf of your study material that you want to publish along with your branch and college, so that I can publish your profile in our contributers section.</h3>
       </div>
     </>
   );

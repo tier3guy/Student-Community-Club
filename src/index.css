@@ -41,9 +41,13 @@ body{
 }
 
 .menu li{
-  padding-left: 1.1em;
+  padding-left: 1.7em;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.4s;
+}
+.menu li:hover{
+  font-weight: bolder;
 }
 
 .hero{
@@ -52,13 +56,15 @@ body{
   font-family: 'Cascadia Code';
 }
 
-.about , .Contact{
-  height: 80vh;
+.about{
+  height: 85vh;
   font-family: 'Cascadia Code';
 }
 
 .Contact{
-  height: 60vh;
+  height: 70vh;
+  font-family: 'Cascadia Code';
+  padding-bottom: 2em;
 }
 
 .section{
@@ -66,9 +72,10 @@ body{
   width: 48%;
   font-size: 1.2em;
   font-weight: bold;
+  line-height: 1.7em;
 }
 
-.about h1{
+.about h1 {
   font-size: 3em;
 }
 
@@ -76,7 +83,7 @@ body{
   margin-top: 1.5em;
 }
 
-#input{
+.input{
   padding: 15px;
   border: none;
   border-bottom: 5px solid rgba(78, 16, 16, 0.863);
@@ -101,13 +108,14 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 1.5em 6em;
+  padding-bottom: 5em;
   font-family: 'Cascadia Code';
 }
 
 .fab{
   color: white;
   margin-left: 1em;
-  font-size: large;
+  font-size: 1.5em;
   transition: all 0.3s;
 }
 .fab:hover{
@@ -136,6 +144,6 @@ body{
   border-color: #c58461c4;
   outline: none;
 }
-#input:focus{
+.input:focus{
   border-color: #722800;
 }
