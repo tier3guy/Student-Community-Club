@@ -51,8 +51,10 @@ body{
 }
 
 .hero{
+  display: flex;
+  flex: row;
   min-height: 100vh;
-  padding-top: 15em;
+  padding-top: 10em;
   font-family: 'Cascadia Code';
 }
 
@@ -100,6 +102,8 @@ body{
 .welcome_text{
   display: flex;
   flex-direction: column;
+  margin-left: 1.8em;
+  padding-top: 3em;
 }
 
 .Footer{
