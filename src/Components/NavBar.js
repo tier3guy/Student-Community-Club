@@ -6,7 +6,7 @@ export default function NavBar(){
   return(
     <>
     <div className = 'navbar'>
-      <h3 style = {{color:headerColor}}>STUDENT'S COMMUNITY CLUB</h3>
+      <h3 style= {{fontWeight:'bolder'}}>Student's Community Club</h3>
       <Menu/>
     </div>
     </>
