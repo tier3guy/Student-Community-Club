@@ -4,7 +4,9 @@
   box-sizing: border-box;
   color: #3b1e14;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar{
   background: #D7B19D;
   width: 15px;
@@ -12,17 +14,17 @@
 ::-webkit-scrollbar-thumb {
   background: #402218;
 }
-
 body{
   background-color: #C68B59;
 }
 
-.app{
+.app , .cont{
   width: 85%;
   margin: auto;
 }
 
 .navbar{
+  z-index: 1000;
   font-family: 'Cascadia Code';
   padding: 1.5em 6em;
   width: 100%;
@@ -40,13 +42,13 @@ body{
   flex-direction: row;
 }
 
-.menu li{
+.menu li , .btn_nav{
   padding-left: 1.7em;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.4s;
 }
-.menu li:hover{
+.menu li:hover , .btn_nav:hover{
   font-weight: bolder;
 }
 
@@ -150,4 +152,30 @@ body{
 }
 .input:focus{
   border-color: #722800;
+}
+
+.btn_nav{
+  background: transparent;
+  font-family: 'Cascadia Code';
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.1em;
+}
+
+.cont{
+  font-family: 'Cascadia Code';
+  min-height: 85vh;
+  padding-top: 6em;
+ 
+}
+
+.card{
+  min-height: 12em;
+  width: 23em;
+  box-shadow: rgba(0, 0, 0, 0.548) 0px 3px 8px;
+  border-radius: 13px;
+  padding: 1.8em;
+  line-height: 2em;
+  transition: all 0.3s;
+  margin:  0px 0px 35px 0px;
 }

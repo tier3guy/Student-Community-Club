@@ -1,23 +1,46 @@
-import Hero from './Hero';
-import About from './AboutUs';
-import Contact from './Contact';
 import Contributers from './Contributers';
-import NavBar from './NavBar';
-import Footer from './Footer';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Resources from './Resources';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 
 export default function Menu(){
+
+  const goToAbout = () => {
+    window.scrollTo(0,570);
+  }
+  const goToContact = () => {
+    window.scrollTo(0,1300);
+  }
+  const goToHome = () => {
+    window.scrollTo(0,0);
+  }
+
   return(
     <>
-    <Router>
       <ul className = 'menu'>
-        <li> <Link to="/"> Home </Link> </li>
-        <li> <Link to="/about"> About </Link> </li>
-        <li> <Link to="/contact"> Contact Us </Link> </li>
-        <li> <Link to="/contributers"> Contributers </Link> </li>
+        <button className = 'btn_nav' onClick = {goToHome}>Home</button>
+        <button className = 'btn_nav' onClick = {goToAbout}>About</button>
+        <button className = 'btn_nav' onClick = {goToContact}>Contact</button>
+        <Router>
+          <button className = 'btn_nav'>
+            <Link to="/contributers" style= {{textDecoration: 'none'}}>
+            Contributers
+            </Link>
+          </button>
+          <button className = 'btn_nav'>
+            <Link to="/resources" style= {{textDecoration: 'none'}}>
+            Resources
+            </Link>
+          </button>
+        </Router>
       </ul>
-    </Router>
     </>
   );
 }
