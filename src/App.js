@@ -1,20 +1,21 @@
 import NavBar from './Components/NavBar';
-import Hero from './Components/Hero';
-import About from './Components/AboutUs';
-import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Contributers from './Components/Contributers';
+import Resources from './Components/Resources';
+import Home from './Components/Home';
+
+import { Route,Switch } from "react-router-dom";
 
 function App() {
   return (
     <>
    <NavBar/>
-    <div className="app">
-      <Hero/>
-      <About/>
-      <Contact/>
-    </div>
-   <Footer/>
+    <Switch>
+      <Route exact path = '/' component = {Home}/>
+      <Route exact path = '/contributers' component = {Contributers}/>
+      <Route exact path = '/resources' component = {Resources}/>
+    </Switch>
+    <Footer/>
     </>
   );
 }

@@ -1,12 +1,4 @@
-import Contributers from './Contributers';
-import Resources from './Resources';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -25,21 +17,11 @@ export default function Menu(){
   return(
     <>
       <ul className = 'menu'>
-        <button className = 'btn_nav' onClick = {goToHome}>Home</button>
+        <Link to = '/' className = 'btn_nav' onClick = {goToHome}>Home</Link>
         <button className = 'btn_nav' onClick = {goToAbout}>About</button>
-        <button className = 'btn_nav' onClick = {goToContact}>Contact</button>
-        <Router>
-          <button className = 'btn_nav'>
-            <Link to="/contributers" style= {{textDecoration: 'none'}}>
-            Contributers
-            </Link>
-          </button>
-          <button className = 'btn_nav'>
-            <Link to="/resources" style= {{textDecoration: 'none'}}>
-            Resources
-            </Link>
-          </button>
-        </Router>
+        <button className = 'btn_nav' onClick = {goToContact}>Share Content</button>
+        <Link to = '/resources' className = 'btn_nav'>Resources</Link>
+        <Link to = '/contributers' className = 'btn_nav'>Contributers</Link>
       </ul>
     </>
   );
