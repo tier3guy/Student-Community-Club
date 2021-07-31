@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 *{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -25,7 +27,6 @@ body{
 
 .navbar{
   z-index: 1000;
-  font-family: 'Cascadia Code';
   padding: 1.5em 6em;
   width: 100%;
   display: flex;
@@ -57,17 +58,14 @@ body{
   flex: row;
   min-height: 100vh;
   padding-top: 10em;
-  font-family: 'Cascadia Code';
 }
 
 .about{
   height: 85vh;
-  font-family: 'Cascadia Code';
 }
 
 .Contact{
   height: 70vh;
-  font-family: 'Cascadia Code';
   padding-bottom: 2em;
 }
 
@@ -92,9 +90,8 @@ body{
   border: none;
   border-bottom: 5px solid rgba(78, 16, 16, 0.863);
   width: 25em;
-  font-family: 'Cascadia Code';
   outline: none;
-  background: transparent;
+  background: #C68B59;
   color: #3b1e14;
   font-size: 1em;
 }
@@ -138,7 +135,6 @@ body{
   background-color: #402218;
   padding: 0.8em;
   color: aliceblue;
-  font-family: 'Cascadia Code';
   font-size: large;
   border: 5px solid rgba(92, 31, 31, 0.445);
   border-radius: 15px;
@@ -156,7 +152,6 @@ body{
 
 .btn_nav{
   background: transparent;
-  font-family: 'Cascadia Code';
   text-transform: uppercase;
   border: none;
   font-size: 1.1em;
@@ -164,7 +159,6 @@ body{
 }
 
 .cont{
-  font-family: 'Cascadia Code';
   min-height: 85vh;
   padding-top: 6em;
  

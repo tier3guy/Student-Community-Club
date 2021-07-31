@@ -19,7 +19,7 @@ export default function Menu(){
       <ul className = 'menu'>
         <Link to = '/' className = 'btn_nav' onClick = {goToHome}>Home</Link>
         <button className = 'btn_nav' onClick = {goToAbout}>About</button>
-        <button className = 'btn_nav' onClick = {goToContact}>Share Content</button>
+        <button className = 'btn_nav' onClick = {goToContact}>Help Community</button>
         <Link to = '/resources' className = 'btn_nav'>Resources</Link>
         <Link to = '/contributers' className = 'btn_nav'>Contributers</Link>
       </ul>

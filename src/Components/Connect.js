@@ -17,17 +17,23 @@ export default function Connect(){
   function updateData(e){
     e.preventDefault();
 
-    db.collection('Contributers').add({
-      name: name,
-      Email: email,
-    }).then(() => {
-      alert('Mail ID submitted, You will contacted within 24 hours !')
-    }).catch((error) => {
-      alert(error.message);
-    });
-
-    setEmail('');
-    setName('');
+    if(email === "" || name === ""){
+      alert("Please fill the necessary fields");
+    }
+    else{
+      db.collection('Contributers').add({
+        name: name,
+        Email: email,
+      }).then(() => {
+        alert('Mail ID submitted, You will contacted within 24 hours !')
+      }).catch((error) => {
+        alert(error.message);
+      });
+  
+      setEmail('');
+      setName('');
+    }
+    
   }
 
 
