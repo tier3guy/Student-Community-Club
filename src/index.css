@@ -199,3 +199,22 @@ body{
   color: rgba(88, 88, 212, 0.466);
 }
 
+#notice {
+  transform: rotate(90deg);
+  position: fixed;
+  right: -25px;
+  top: 45%;
+  background-color: #3b1e14;
+  padding: 15px;
+}
+
+#notice a{
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+#notice:hover{
+  color: #C68B59;
+}
