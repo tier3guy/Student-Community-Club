@@ -9,7 +9,6 @@ export default function Resources(){
       <p className = "mb">This site is all about community helping community, so please do share yours material as well.</p>
 
       <Material/>
-
     </div>
     </>
   );

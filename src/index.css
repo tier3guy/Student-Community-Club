@@ -188,3 +188,14 @@ body{
   margin-top: 20px ;
   margin-bottom: 20px ;
 }
+
+.syllabus_link{
+  margin-top: 0.7em;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.syllabus_link:hover{
+  color: rgba(88, 88, 212, 0.466);
+}
+
