@@ -17,7 +17,7 @@ export default function Menu(){
   return(
     <>
       <ul className = 'menu'>
-        <Link to = '/Students-Community-Club' className = 'btn_nav' onClick = {goToHome}>Home</Link>
+        <Link to = '/' className = 'btn_nav' onClick = {goToHome}>Home</Link>
         <button className = 'btn_nav' onClick = {goToAbout}>About</button>
         <button className = 'btn_nav' onClick = {goToContact}>Help Community</button>
         <Link to = '/resources' className = 'btn_nav'>Resources</Link>
