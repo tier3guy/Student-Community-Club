@@ -1,5 +1,3 @@
-import NavBar from './NavBar';
-import Footer from './Footer';
 import ContributerCard from './ContributerCard';
 import Data from './Data';
 

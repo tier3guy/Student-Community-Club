@@ -2,7 +2,6 @@ import Menu from './Menu';
 
 export default function NavBar(){
 
-  const headerColor = '#171010'
   return(
     <>
     <div className = 'navbar'>
