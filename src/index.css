@@ -243,7 +243,7 @@ body{
 #question-section{
   display: flex;
   padding: 10px 12px;
-  background: rgba(185, 133, 85, 0.712);
+  background: rgba(153, 109, 68, 0.582);
   border-radius: 7px 7px 0px 0px;
 }
 
@@ -257,9 +257,12 @@ body{
   margin-left: 12px;
 }
 
-#answ{
-  padding: 6px;
-  background-color: rgba(138, 22, 1, 0.473);
-  font-size: 0.8rem;
-  border-radius: 0px 0px 7px 7px ;
+.linkAccord{
+  background-color: rgba(138, 22, 1, 0.178);
+  padding: 12px 45px;
+}
+.linkAccord a h4{
+  font-weight: 400;
+  text-decoration: dotted;
+  transition: all 0.4s;
 }

@@ -21,9 +21,12 @@ export default function Accordion(props){
           <h3 id = 'quest'>{props.subject}</h3>
         </div>
         {
-         
+         icon ? content.map((curr) => {
+           return(
+             <div className = "linkAccord"><a href = {curr.link} target = "_blank"><h4>{curr.heading}</h4></a></div>
+           );
+         }) : ""
         }
-        <p id = 'answ'>{icon? props.content : ''}</p>
       </div>
     </>
   );

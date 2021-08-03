@@ -2,7 +2,14 @@ const questions = [
   {
     id : 1,
     subject : 'CS',
-    content : []
+    content : [{
+      heading: "Fundamentals of Computer",
+      link: "https://drive.google.com/file/d/1OfzkjDS7MbcYEXt76i9xJ5Pn_mW__mcM/view?usp=sharing"
+    },
+    {
+      heading:"Sample Question Paper 2017",
+      link: "https://drive.google.com/file/d/17gRvm0u8H85OVNSlwBLO3j06GkCb0djG/view?usp=sharing"
+    }]
   },
   {
     id : 2,
