@@ -1,9 +1,12 @@
 import ContributerCard from './ContributerCard';
+import NavSecondary from "./Nav_secondary";
 import Data from './Data';
+import Footer from './Footer';
 
 export default function Contributers(){
   return(
     <>
+    <NavSecondary/>
     <div className = 'cont'>
     <h3>As we said earlier this site is By Community For the Community. Here are our contributers. </h3>
     <div style = {{padding: '3em 0em', display: 'grid',gridTemplateColumns: 'auto auto auto'}}>
@@ -19,6 +22,7 @@ export default function Contributers(){
       }
     </div>
     </div>
+    <Footer/>
     </>
   );
 }
