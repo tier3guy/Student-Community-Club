@@ -2,7 +2,7 @@ export default function Footer(){
   return(
     <>
       <div className = 'Footer'>
-        <div className = 'copyRight' style = {{color:'white'}}>Students's Community Club | An Open Source Project</div>
+        <div className = 'copyRight' style = {{color:'white'}}>Students's Community Club | <a rel="noreferrer" href = "https://github.com/tier3guy/Student-Community-Club" target = "_blank">An Open Source Project</a></div>
         <div>
           <ul className = 'join'>
             <li><a rel = "noreferrer" href = 'https://www.facebook.com/profile.php?id=100042540223986' target = '_blank'><i className="fab fa-facebook"></i></a></li>
