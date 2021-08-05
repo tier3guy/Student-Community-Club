@@ -23,7 +23,7 @@ export default function Accordion(props){
         {
          icon ? content.map((curr) => {
            return(
-             <div className = "linkAccord"><a href = {curr.link} target = "_blank"><h4>{curr.heading}</h4></a></div>
+             <div className = "linkAccord"><a href = {curr.link} rel="noreferrer" target = "_blank"><h4>{curr.heading}</h4></a></div>
            );
          }) : ""
         }
