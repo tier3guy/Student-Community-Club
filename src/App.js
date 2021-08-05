@@ -22,7 +22,7 @@ function App() {
   else{
     return(
       <>
-        <div id="notice"><a rel = "noreferrer" href= "https://docs.google.com/document/d/18HKtYRtHYU5YO_tLJ8ShqGrKpgi9zBjLEgImSEDcFuc/edit" target="_blank">NOTICE</a></div>
+        <div id="notice"><a rel = "noreferrer" href= "https://docs.google.com/document/d/18HKtYRtHYU5YO_tLJ8ShqGrKpgi9zBjLEgImSEDcFuc/edit?usp=sharing" target="_blank">NOTICE</a></div>
         <Switch>
           <Route exact path = '/' component = {Home}/>
           <Route exact path = '/contributers' component = {Contributers}/>
