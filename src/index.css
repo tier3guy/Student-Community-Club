@@ -1,4 +1,8 @@
+
+/*------------ Adding Custom Google Fonts -----------*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+
 *{
   font-family: 'Atkinson Hyperlegible', sans-serif;
   margin: 0%;
@@ -6,130 +10,10 @@
   box-sizing: border-box;
   color: #3b1e14;
 }
-html {
-  scroll-behavior: smooth;
-}
-::-webkit-scrollbar{
-  background: #D7B19D;
-  width: 15px;
-}
-::-webkit-scrollbar-thumb {
-  background: #402218;
-}
-body{
-  background-color: #C68B59;
-}
 
-.app , .cont{
-  width: 85%;
-  margin: auto;
-}
 
-.navbar{
-  z-index: 1000;
-  padding: 1.5em 6em;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: fixed;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  background-color: #C68B59;
-}
 
-.menu{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.menu li , .btn_nav{
-  padding-left: 1.7em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-.menu li:hover , .btn_nav:hover{
-  font-weight: bolder;
-}
-
-.hero{
-  display: flex;
-  flex: row;
-  min-height: 100vh;
-  padding-top: 10em;
-}
-
-.about{
-  height: 85vh;
-}
-
-.Contact{
-  height: 70vh;
-  padding-bottom: 2em;
-}
-
-.section{
-  min-height: 10em;
-  width: 48%;
-  font-size: 1.2em;
-  font-weight: bold;
-  line-height: 1.7em;
-}
-
-.about h1 {
-  font-size: 3em;
-}
-
-.connect_container{
-  margin-top: 1.5em;
-}
-
-.input{
-  padding: 15px;
-  border: none;
-  border-bottom: 5px solid rgba(78, 16, 16, 0.863);
-  width: 25em;
-  outline: none;
-  background: #C68B59;
-  color: #3b1e14;
-  font-size: 1em;
-}
-::placeholder { 
-  color: #5a2f20d2;
-}
-.welcome_text{
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.8em;
-  padding-top: 3em;
-}
-
-.Footer{
-  background-color: #3b1e14;
-  height: 4em;
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5em 6em;
-  padding-bottom: 5em;
-  font-family: 'Cascadia Code';
-}
-
-.fab{
-  color: white;
-  margin-left: 1em;
-  font-size: 1.5em;
-  transition: all 0.3s;
-}
-.fab:hover{
-  color: #C68B59;
-}
-.join{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
+/*------------------ Button CSS ------------------*/
 .btn_primary{
   margin-top: 0.7em;
   background-color: #402218;
@@ -157,7 +41,162 @@ body{
   font-size: 1.1em;
   text-decoration: none;
 }
+/*------------------ Button CSS Ends here ------------------*/
 
+
+
+
+/*--------------- Customizing Scroll-bars CSS ---------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  background: #D7B19D;
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: #402218;
+}
+/*--------------- Customizing Scroll-bars CSS Ends here ---------------*/
+
+
+
+
+/*---------------- NavBar CSS -----------------*/
+.navbar{
+  z-index: 1000;
+  padding: 1.5em 6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: #C68B59;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li , .btn_nav{
+  padding-left: 1.7em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.menu li:hover , .btn_nav:hover{
+  font-weight: bolder;
+}
+/*---------------- NavBar CSS Ends here -----------------*/
+
+
+
+
+/*----------------- Home page CSS --------------------*/
+body{
+  background-color: #C68B59;
+}
+
+.app , .cont{
+  width: 85%;
+  margin: auto;
+}
+
+.hero{
+  display: flex;
+  flex: row;
+  min-height: 100vh;
+  padding-top: 10em;
+}
+
+.welcome_text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.8em;
+  padding-top: 3em;
+}
+
+.about{
+  height: 85vh;
+}
+
+.Contact{
+  height: 70vh;
+  padding-bottom: 2em;
+}
+
+.section{
+  min-height: 10em;
+  width: 48%;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.7em;
+}
+
+.about h1 {
+  font-size: 3em;
+}
+/*----------------- Home page CSS Ends here --------------------*/
+
+
+
+/*------------ Contact Form --------------------*/
+.connect_container{
+  margin-top: 1.5em;
+}
+
+.input{
+  padding: 15px;
+  border: none;
+  border-bottom: 5px solid rgba(78, 16, 16, 0.863);
+  width: 25em;
+  outline: none;
+  background: #C68B59;
+  color: #3b1e14;
+  font-size: 1em;
+}
+::placeholder { 
+  color: #5a2f20d2;
+}
+/*--------------------- Contact Form Ends here --------------------*/
+
+
+
+
+/*----------------- Footer section ------------------*/
+.Footer{
+  background-color: #3b1e14;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 6em;
+  padding-bottom: 5em;
+  font-family: 'Cascadia Code';
+}
+
+.fab{
+  color: white;
+  margin-left: 1em;
+  font-size: 1.5em;
+  transition: all 0.3s;
+}
+.fab:hover{
+  color: #C68B59;
+}
+.join{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+/*----------------- Footer section Ends here ------------------*/
+
+
+
+/*------------------------ Contribution section css -----------------*/
 .cont{
   min-height: 85vh;
   padding-top: 6em;
@@ -196,7 +235,12 @@ body{
 .syllabus_link:hover{
   color: rgba(88, 88, 212, 0.466);
 }
+/*------------------------ Contribution section css ends here -----------------*/
 
+
+
+
+/*----------------- Notice section ---------------*/
 #notice {
   transform: rotate(90deg);
   position: fixed;
@@ -216,8 +260,12 @@ body{
 #notice a:hover{
   color: #C68B59;
 }
+/*----------------- Notice section Ends here ---------------*/
 
 
+
+
+/*---------------------- Accordian CSS --------------------*/
 .accordion{
   width: 100%;
   padding: 15px 12px;
@@ -266,6 +314,10 @@ body{
   text-decoration: dotted;
   transition: all 0.4s;
 }
+/*---------------------- Accordian CSS ends here --------------------*/
+
+
+
 
 /* ------------------- Loader ----------------------- */
 .loader{
@@ -275,3 +327,4 @@ body{
   justify-content: center;
   align-items: center;
 }
+/*----------------- Loader CSS ends here --------------*/
