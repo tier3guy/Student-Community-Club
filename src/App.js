@@ -11,9 +11,9 @@ function App() {
   const [loading,setLoading] = useState(false);
   useEffect(()=>{
     setLoading(true);
-    setTimeout(()=>{
+    setTimeout(() => {
       setLoading(false);
-    },4000)
+    },2000)
   },[])
 
   if(loading){

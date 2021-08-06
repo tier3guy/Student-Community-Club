@@ -76,6 +76,10 @@ html {
   background-color: #C68B59;
 }
 
+.hamburger{
+  display: none;
+}
+
 .menu{
   list-style: none;
   display: flex;
@@ -139,6 +143,12 @@ body{
 
 .about h1 {
   font-size: 3em;
+}
+
+.section_container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 /*----------------- Home page CSS Ends here --------------------*/
 
@@ -328,3 +338,127 @@ body{
   align-items: center;
 }
 /*----------------- Loader CSS ends here --------------*/
+
+
+
+
+
+/*---------------------------------------- MOBILE WORK STARTS HERE-------------------------------------------*/
+@media only screen and (max-width: 1070px){
+
+  *{
+    box-sizing: border-box;
+    font-size: x-small;
+  }
+
+  /*---------- Navbar ------------*/
+  .menu {
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar{
+    width: 100vw;
+    justify-content: space-around;
+    padding: 15px 3px;
+  }
+
+  .hamburger{
+    display: block;
+
+  }
+
+  .navbar h3{
+    font-size: 15px;
+  }
+  /*---------- Navbar Ends here ------------*/
+
+  .app , .cont , .about , .hero_img{
+    width: 90vw;
+  }
+
+  .about h1{
+    text-align: center;
+
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    margin: auto;
+  }
+
+
+
+  .himg{
+    width: 230px;
+    height: 230px;
+    margin-left: 52px;
+    margin-top: 30px;
+  }
+
+  .welcome_text{
+    padding-top: 35px;
+  }
+
+  .welcome_text h1{
+    margin-left: -20px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .btn_primary{
+    display: none;
+  }
+
+
+  .input{
+    width: 80vw;
+  }
+
+  #notice {
+    display: none;
+  }
+
+  .section_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 90vw;
+  }
+
+  .section{
+    width: 90%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .Footer{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 10px
+  }
+
+  .join{
+    margin-top: 10px;
+  }
+
+  .Contact {
+    text-align: center;
+  }
+
+  .Contact h1{
+    padding-top: 20px;
+  }
+
+  .connect_container{
+    padding-top: 20px;
+    width: 90vw;
+  }
+
+}
+/*---------------------------------------- MOBILE WORK ENDS HERE-------------------------------------------*/
