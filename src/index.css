@@ -70,7 +70,7 @@ html {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background-color: #C68B59;
@@ -84,8 +84,6 @@ html {
   list-style: none;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  right: 10vw;
 }
 
 .menu li , .btn_nav{
@@ -366,7 +364,7 @@ body{
   }
 
   .hamMenu ul{
-    padding-top: 10vh;
+    padding-top: 15vh;
     position: fixed;
     width: 100vw;
     display: flex;
