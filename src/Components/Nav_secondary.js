@@ -23,7 +23,7 @@ export default function NavSecondary(){
       <MenuSeconadary/>
     </div>
     <button 
-        style = {{background: "transparent" , border: "none"}}
+        style = {{background: "transparent" , border: "none" , outline:"none"}}
         onClick = {toggler}>
         <i className="fas fa-bars hamburger"></i>
       </button>

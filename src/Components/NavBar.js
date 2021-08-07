@@ -23,7 +23,7 @@ export default function NavBar(){
       <h3 style= {{fontWeight:'bolder'}}>Student's Community Club</h3>
       <Menu/>
       <button 
-        style = {{background: "transparent" , border: "none"}}
+        style = {{background: "transparent" , border: "none", outline:"none"}}
         onClick = {toggler}>
         <i className="fas fa-bars hamburger"></i>
       </button>
