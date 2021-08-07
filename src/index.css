@@ -84,6 +84,8 @@ html {
   list-style: none;
   display: flex;
   flex-direction: row;
+  position: absolute;
+  right: 10vw;
 }
 
 .menu li , .btn_nav{
@@ -358,9 +360,25 @@ body{
   }
 
   /*---------- Navbar ------------*/
-  .menu {
-    flex-direction: column;
+
+  .menu{
     display: none;
+  }
+
+  .hamMenu ul{
+    padding-top: 10vh;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5f2100b2;
+  }
+
+  .btn_nav{
+    margin-bottom: 2vh;
+    color: #ffbc81;
+    font-size: 1.8em;
   }
 
   .navbar{
