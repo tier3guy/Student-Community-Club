@@ -64,13 +64,17 @@ html {
 
 
 /*---------------- NavBar CSS -----------------*/
+.hamburger_secondary{
+  display: none;
+}
+
 .navbar{
   z-index: 1000;
-  padding: 1.5em 6em;
+  padding: 1.5em 7em;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: unset;
   position: fixed;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background-color: #C68B59;
@@ -215,6 +219,10 @@ body{
  
 }
 
+.cards_cont{
+  grid-template-columns: auto auto auto;
+}
+
 .card{
   min-height: 12em;
   width: 23em;
@@ -289,6 +297,10 @@ body{
   position: relative;
   height: 90%;
   overflow-y: scroll;
+  box-shadow: rgba(150, 80, 1, 0.719) 0px 1px 4px, rgb(80, 25, 0) 0px 0px 0px 5px;
+  padding: 1em;
+  overflow-y: scroll;
+  height: 45vh;
 }
 
 #items::-webkit-scrollbar {
@@ -358,7 +370,18 @@ body{
   }
 
   /*---------- Navbar ------------*/
+  .secondary{
+    z-index: 33;
+  }
 
+  .secondHam{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    right: 0%;
+    padding-top: 1em;
+    z-index: 22;
+  }
   .menu{
     display: none;
   }
@@ -373,6 +396,16 @@ body{
     background-color: #5f2100b2;
   }
 
+  .cards_cont{
+    grid-template-columns: auto;
+    
+  }
+
+  .card{
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
+
   .btn_nav{
     margin-bottom: 2vh;
     color: #ffbc81;
@@ -382,10 +415,10 @@ body{
   .navbar{
     width: 100vw;
     justify-content: space-between;
-    padding: 20px 10vw;
+    padding: 20px 5vw;
   }
 
-  .hamburger{
+  .hamburger , .hamburger_secondary{
     display: block;
     font-size: 4vw;
   }
@@ -481,6 +514,14 @@ body{
     margin-top: 4em;
   }
 
+  .Footer .copyRight {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .Footer .copyRight a{
+    font-size: 1em;
+  }
+
   .join{
     margin-top: 2em;
   }
@@ -520,6 +561,21 @@ body{
 
   .mb{
     font-size: 1.8em;
+    margin-top: 1.2em;
+  }
+
+  #quest ,  .branch_name , .syllabus_link a{
+    font-size: 1.6em;
+  }
+
+  .linkAccord a h4{ 
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+
+  .cont h3{
+    margin-top: 5vh;
+    font-size: 1.5em;
   }
 }
 
@@ -544,9 +600,20 @@ body{
     margin-top: 20em;
   }
 
+  .Footer{
+    margin-top: 10em;
+  }
+
   .himg{
     width: 52%;
     height: 52%;
+  }
+
+}
+@media only screen and (max-width: 340px){
+
+  .Footer{
+    margin-top: 20em;
   }
 
 }

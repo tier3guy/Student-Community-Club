@@ -9,7 +9,7 @@ export default function Contributers(){
     <NavSecondary/>
     <div className = 'cont'>
     <h3>As we said earlier this site is By Community For the Community. Here are our contributers. </h3>
-    <div style = {{padding: '3em 0em', display: 'grid',gridTemplateColumns: 'auto auto auto'}}>
+    <div className = "cards_cont" style = {{padding: '3em 0em', display: 'grid'}}>
       {
         Data.map((object) => {
             return(

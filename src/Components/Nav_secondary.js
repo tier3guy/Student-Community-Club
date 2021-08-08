@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function NavSecondary(){
 
-  const [ham,setHam] = useState(false);
+  const [ham,setHam] = useState(true);
   const [display,setDisplay] = useState("none");
   const toggler = () => {
     setHam(!ham);
@@ -18,15 +18,15 @@ export default function NavSecondary(){
 
   return(
     <>
-    <div className = 'navbar'>
+    <div className = 'navbar secondary'>
       <h3 style= {{fontWeight:'bolder'}}>Student's Community Club</h3>
       <MenuSeconadary/>
-    </div>
     <button 
         style = {{background: "transparent" , border: "none" , outline:"none"}}
         onClick = {toggler}>
-        <i className="fas fa-bars hamburger"></i>
-      </button>
+        <i className="fas fa-bars hamburger_secondary"></i>
+    </button>
+    </div>
     <div className = "hamMenu" style = {{display:display}}><MenuSeconadary/></div>
     </>
   );
