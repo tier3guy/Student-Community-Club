@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Menu from './Menu';
-import MenuSeconadary from './Menu_seconadary';
+import Menu_mobile from './Menu_mobile';
+
 
 export default function NavBar(){
 
@@ -27,7 +28,7 @@ export default function NavBar(){
         <i className="fas fa-bars hamburger"></i>
       </button>
     </div>
-    <div className = "hamMenu" style = {{display:display , cursor: "pointer"}}><MenuSeconadary/></div>
+    <div className = "hamMenu" style = {{display:display , cursor: "pointer"}}><Menu_mobile/></div>
     </>
   );
 }

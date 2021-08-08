@@ -1,4 +1,5 @@
 import MenuSeconadary from './Menu_seconadary';
+import Menu_mobile from './Menu_mobile';
 import { useState } from 'react';
 
 export default function NavSecondary(){
@@ -27,7 +28,7 @@ export default function NavSecondary(){
         <i className="fas fa-bars hamburger_secondary"></i>
     </button>
     </div>
-    <div className = "hamMenu" style = {{display:display}}><MenuSeconadary/></div>
+    <div className = "hamMenu" style = {{display:display}}><Menu_mobile/></div>
     </>
   );
 }
