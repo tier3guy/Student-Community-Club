@@ -601,7 +601,7 @@ body{
   }
 
   .Footer{
-    margin-top: 10em;
+    margin-top: 35em;
   }
 
   .himg{
@@ -613,7 +613,7 @@ body{
 @media only screen and (max-width: 340px){
 
   .Footer{
-    margin-top: 20em;
+    margin-top: 35em;
   }
 
 }
