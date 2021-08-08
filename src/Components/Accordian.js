@@ -16,7 +16,7 @@ export default function Accordion(props){
           <button 
             id = 'toggle' 
             onClick = {toggleAnswer}>
-            <i className = {icon ? 'fas fa-chevron-up' : 'fas fa-chevron-down'}></i>
+            <i className = {icon ? 'fas fa-chevron-up' : 'fas fa-chevron-down'} style = {{outline: "none"}}></i>
           </button>
           <h3 id = 'quest'>{props.subject}</h3>
         </div>
