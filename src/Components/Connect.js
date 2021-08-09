@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {db} from './Firebase';
+import emailjs from 'emailjs-com';
 
 export default function Connect(){
 
@@ -13,6 +14,18 @@ export default function Connect(){
   function getName(e){
     setName(e.target.value);
   }
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_yb0f6vo', 'template_hdu1kre', e.target , 'user_H51qC2hwnMGuajy1OghsW')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
 
   function updateData(e){
     e.preventDefault();
@@ -29,11 +42,12 @@ export default function Connect(){
       }).catch((error) => {
         alert(error.message);
       });
+
+      sendEmail(e); 
   
       setEmail('');
       setName('');
-    }
-    
+    }   
   }
 
 
@@ -42,6 +56,7 @@ export default function Connect(){
     <form onSubmit = {updateData}>
     <div className = 'connect_container'>
     <input placeholder = 'Enter Your Mail ID Here' 
+           name = "email"
            className = 'input' 
            type = 'email' 
            id = 'emailSection'
@@ -49,6 +64,7 @@ export default function Connect(){
            value = {email}></input>
     <br/>
     <input placeholder = 'Enter Your Full Name Here' 
+           name = "name"
            className = 'input' 
            id = 'nameSection'
            onChange = {getName}
