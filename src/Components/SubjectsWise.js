@@ -20,7 +20,39 @@ const questions = [
       {
         heading:"Double Integration",
         link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
-      }
+      },
+      {
+        heading:"Sample Question Paper1 2009",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper2 2009",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper1 2010",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper2 2010",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper1 2011",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper2 2011",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper1 2012",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
+      {
+        heading:"Sample Question Paper2 2012",
+        link: "https://drive.google.com/file/d/1HjRdeSxw5plDW67eNH7hRCwbp1Fm0AHA/view?usp=sharing"
+      },
     ]
   },
   {
