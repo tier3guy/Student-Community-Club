@@ -4,6 +4,10 @@ const questions = [
     subject : 'CS',
     content : [
       {
+        heading: "C soft Book",
+        link: "https://drive.google.com/file/d/182Hz0G9qdOnIssGWc1zNayjs-RhUAPGH/view?usp=sharing"
+      },
+      {
         heading: "Fundamentals of Computer",
         link: "https://drive.google.com/file/d/1OfzkjDS7MbcYEXt76i9xJ5Pn_mW__mcM/view?usp=sharing"
       },
